@@ -122,17 +122,19 @@
         margin-left: 0;
     }
     .workSection .flex .work .h1 {
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: bold;
         width: 100%;
         text-align: center;
+        padding: 3px;
     }
     .workSection .flex .work .h6 {
         width: 100%;
         font-size: 0.8rem;
-        padding: 5px;
+        padding: 0;
         line-height: 20px;
         text-align: center;
+
 
     }
 }
