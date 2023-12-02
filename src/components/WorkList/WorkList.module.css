@@ -42,7 +42,6 @@
 .workSection .flex .work .h1 {
     font-size: 1.2rem;
     font-weight: bold;
-
     margin-left: 0;
     padding: 10px;
 }
@@ -118,13 +117,22 @@
     .workSection .h1 {
         font-weight: bold;
         font-size: 1rem;
-        width: 55%;
+        width: 90%;
         text-align: center;
         margin-left: 0;
     }
     .workSection .flex .work .h1 {
         font-size: 1.2rem;
         font-weight: bold;
-        width: 200px;
+        width: 100%;
+        text-align: center;
+    }
+    .workSection .flex .work .h6 {
+        width: 100%;
+        font-size: 0.8rem;
+        padding: 5px;
+        line-height: 20px;
+        text-align: center;
+
     }
 }

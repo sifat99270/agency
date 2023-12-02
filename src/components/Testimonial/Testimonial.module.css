@@ -115,13 +115,19 @@
         text-align: center;
     }
     .testimonialSection .testimonial {
-        width: 90%;
+        width: 95%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
         gap: 15px;
-        margin-top: 20px;
         margin: 20px auto;
+    }
+    .testimonialSection .testimonial .imgBox .h6 {
+        width: 90%;
+        text-align: center;
+        color: #9d9d9d;
+        padding: 10px;
+        font-size: 0.5rem;
     }
 }

@@ -23,7 +23,7 @@ const Footer = async () => {
                         <a href={data[0]['link']} ><img src="/Footer/facebook.svg" /></a>
                         <a href={data[1]['link']}><img src="/Footer/twitter.svg" /></a>
                         <a href={data[2]['link']}><img src="/Footer/instagram.svg" /></a>
-                        <a href="#"><img src="logo1.svg" /></a>
+                        <a href="#"><img src="/Footer/camera.svg" /></a>
                     </div>
                 </div>
                 <div className={classes.link}>
