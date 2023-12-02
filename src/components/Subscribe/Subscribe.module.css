@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     padding: 50px;
+    background-color: #ffffff;
 }
 .subscribeSection .color {
     font-weight: bolder;
@@ -44,6 +45,7 @@
     outline: none;
     padding: 5px;
     border-radius: 10px;
+    background-color: #fff;
 }
 .subscribeSection .form .btn {
     height: 90%;
