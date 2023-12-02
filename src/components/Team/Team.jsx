@@ -1,44 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <link href="team.css" rel="stylesheet" />
-  <body>
-    <section class="teamSection">
-      <p class="green">OUR TEAM MEMBER</p>
-      <p class="h1">Check our awesome team members</p>
-      <div class="flex">
-        <div class="imgBox">
-          <img class="img" src="./imgg2.svg" />
-          <div class="icon">
-            <img src="./facebook.svg" />
-            <img src="./twitter.svg" />
-            <img src="./instagram.svg" />
-          </div>
-          <p class="name">Devon Lane</p>
-        </div>
-        <div class="imgBox">
-          <img class="img" src="./img1.svg" />
-          <div class="icon">
-            <img src="./facebook.svg" />
-            <img src="./twitter.svg" />
-            <img src="./instagram.svg" />
-          </div>
-          <p class="name">Danny Bailey</p>
-        </div>
-        <div class="imgBox">
-          <img class="img" src="./img3.svg" />
-          <div class="icon">
-            <img src="./facebook.svg" />
-            <img src="./twitter.svg" />
-            <img src="./instagram.svg" />
-          </div>
-          <p class="name">Alex Lov</p>
-        </div>
-      </div>
-    </section>
-  </body>
-</html>
+
+import classes from './Team.module.css';
+
+async function getData(){
+    const res=await fetch(process.env.BASE_URL+"api/TeamList");
+    if(!res.ok){
+        throw new Error("TeamList Calling Fail");
+    }
+    return res.json();
+}
+const Team = async () => {
+    const data=await getData();
+    return (
+            <section className={classes.teamSection}>
+                <p className={classes.green}>OUR TEAM MEMBER</p>
+                <p className={classes.h1}>Check our awesome team members</p>
+                <div className={classes.flex}>
+                    {data.map((item)=>{
+                        return(
+                            <div key={item['id']} className={classes.imgBox}>
+                                <img className={classes.img} src={item['image']} />
+                                <div className={classes.icon}>
+                                    <img src="/Team/facebook.svg" />
+                                    <img src="/Team/twitter.svg" />
+                                    <img src="/Team/instagram.svg" />
+                                </div>
+                                <p className={classes.name}>{item['name']}</p>
+                            </div>
+                        )
+                    })}
+
+                </div>
+            </section>
+    );
+};
+
+export default Team;

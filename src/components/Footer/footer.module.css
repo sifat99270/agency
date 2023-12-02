@@ -1,0 +1,241 @@
+.footerSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    position: relative;
+    padding: 100px 0px;
+    border-radius: 10px;
+}
+.footerSection .logo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+    width: 33%;
+    margin-left: 100px;
+    position: relative;
+}
+.footerSection .logo .logoI{
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #ffffff;
+    right: 20px;
+
+}
+.footerSection .logo .h1 {
+    font-weight: bolder;
+    font-size: 2rem;
+    color: #fff;
+    padding: 5px;
+}
+.footerSection .logo .h6 {
+    color: #fff;
+    width: 250px;
+    padding: 5px;
+}
+.footerSection .logo  .social {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+
+}
+.footerSection .logo .social a {
+    position: relative;
+}
+.footerSection .logo .social a img{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+   background-color: #20b15a;
+    border-radius: 50%;
+}
+.footerSection .link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 33%;
+    margin-top: 40px;
+    position: relative;
+}
+.footerSection .link .linkI{
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #ffffff;
+    right: 20px;
+
+}
+.footerSection .link .h1 {
+    font-weight: bolder;
+    font-size: 2rem;
+    color: #fff;
+    padding: 5px;
+}
+.footerSection .link .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.footerSection .link .links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+.footerSection .address {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 33%;
+    height: 200px;
+    position: relative;
+}
+.footerSection .address .addressI{
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #ffffff;
+    right: 20px;
+    top: 20px;
+
+}
+.footerSection .address .h1 {
+    font-weight: bolder;
+    font-size: 2rem;
+    color: #fff;
+    padding: 10px;
+}
+.footerSection .address .h6 {
+    width: 250px;
+    color: #fff;
+    padding: 5px;
+}
+.footerSection .copy {
+    position: absolute;
+    color: #fff;
+    bottom: 20px;
+    left: 100px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .footerSection {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: #000000;
+        position: relative;
+        padding: 80px 50px;
+    }
+    .footerSection .logo .h1 {
+        font-weight: bolder;
+        font-size: 1rem;
+        color: #fff;
+        padding: 5px;
+    }
+    .footerSection .logo .h6 {
+        color: #fff;
+        width: 250px;
+        padding: 5px;
+        font-size: 0.8rem;
+    }
+    .footerSection .logo {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 40px;
+        width: 90%;
+        margin-left: 0px;
+        position: relative;
+    }
+    .footerSection .logo .logoI{
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #ffffff;
+       bottom: 0;
+        left: 0;
+
+    }
+    .footerSection .link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        margin-top: 40px;
+        position: relative;
+    }
+    .footerSection .link .linkI{
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #ffffff;
+        bottom: -20px;
+        left: 0;
+
+    }
+    .footerSection .link .h1 {
+        font-weight: bolder;
+        font-size: 1rem;
+        color: #fff;
+        padding: 5px;
+    }
+    .footerSection .link .links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        width: 300px;
+    }
+    .footerSection .address {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 90%;
+        position: relative;
+    }
+    .footerSection .address .addressI{
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #ffffff;
+        left: 0;
+        top: 100%;
+
+    }
+    .footerSection .address .h1 {
+        font-weight: bolder;
+        font-size: 1rem;
+        color: #fff;
+        padding: 10px;
+    }
+    .footerSection .address .h6 {
+        width: auto;
+        color: #fff;
+        padding: 5px;
+    }
+    .footerSection .copy {
+        position: absolute;
+        color: #fff;
+        bottom: 20px;
+        left: 100px;
+    }
+    .footerSection .link .links a {
+        display: flex;
+        text-decoration: none;
+        color: #fff;
+        padding: 10px;
+        width: 80px;
+        text-align: center;
+        gap: 3px;
+    }
+    .footerSection .address .h6 {
+        width: 280px;
+        color: #fff;
+        padding: 5px;
+    }
+}

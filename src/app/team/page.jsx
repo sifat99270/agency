@@ -1,14 +1,13 @@
 import React from 'react';
+import Common from "@/components/Common/Common";
 import Team from "@/components/Team/Team";
-import Contacts from "@/components/Contacts/Contacts";
-import Brands from "@/components/Brands/Brands";
+
 
 const Page = () => {
     return (
         <div>
+          <Common title="Team" current="Team" />
             <Team />
-            <Contacts />
-            <Brands />
         </div>
     );
 };

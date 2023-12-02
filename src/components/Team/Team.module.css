@@ -1,8 +1,4 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+
 .teamSection {
   width: 1100px;
   display: flex;
@@ -14,11 +10,21 @@
   color: #20b15a;
   font-weight: bold;
   padding: 10px;
+  transform: translateX(-100px);
+  animation: all 0.5s forwards;
 }
 .teamSection .h1 {
   width: 400px;
   font-weight: 1000;
   font-size: 2rem;
+  transform: translateX(100px);
+  animation: all 0.5s forwards;
+}
+@keyframes all {
+  100%{
+    transform: translateX(0);
+  }
+
 }
 .teamSection .flex {
   width: 100%;
@@ -31,14 +37,36 @@
   height: 350px;
   display: flex;
   flex-direction: column;
+
+  align-items: center;
   background-color: #fff;
   position: relative;
   box-shadow: 0 0 10px 2px #e3e3e3;
   border-radius: 10px;
 }
+
+.teamSection .imgBox:nth-child(odd){
+  transform: translateX(-50px);
+  animation: animate 0.5s forwards;
+  opacity: 0;
+}
+
+.teamSection .imgBox:nth-child(even){
+  transform: translateX(50px);
+  animation: animate 0.5s forwards;
+  opacity: 0;
+}
+@keyframes animate {
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 .teamSection .imgBox .img {
-  width: 100%;
+  width: 99%;
+  height: 80%;
   object-fit: cover;
+  border-radius: 10px;
 }
 .teamSection .imgBox .name {
   font-weight: bolder;

@@ -1,0 +1,130 @@
+.workSection {
+    width: 1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: auto;
+    padding: 50px;
+}
+.workSection .green {
+    color: #20b15a;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-left: 0;
+}
+.workSection .h1 {
+    font-weight: bold;
+    font-size: 2rem;
+    width: 450px;
+   margin-left: 0;
+}
+
+.workSection .flex {
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+}
+.workSection .flex .work {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+}
+.workSection .flex .work .svg {
+    width: 70px;
+    padding: 20px;
+    background-color: #d7f5dc;
+    border-radius: 10px;
+}
+.workSection .flex .work .h1 {
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    margin-left: 0;
+    padding: 10px;
+}
+.workSection .flex .work .h6 {
+    width: 200px;
+    font-size: 0.8rem;
+    padding: 5px;
+    line-height: 20px;
+
+}
+.workSection .flex .work .icon {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    width: 120px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.workSection .flex .work .icon .arrow {
+    height: 20px;
+}
+@media only screen and (max-width: 1150px) {
+    .workSection {
+        width: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin: auto;
+
+    }
+    .workSection .flex {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .workSection {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .workSection .flex {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        gap: 20px;
+    }
+    .workSection .flex .work {
+        width: 90%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .workSection .green {
+        color: #20b15a;
+        text-transform: uppercase;
+        padding: 10px;
+        margin-left: 0;
+    }
+
+    .workSection .h1 {
+        font-weight: bold;
+        font-size: 1rem;
+        width: 55%;
+        text-align: center;
+        margin-left: 0;
+    }
+    .workSection .flex .work .h1 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        width: 200px;
+    }
+}

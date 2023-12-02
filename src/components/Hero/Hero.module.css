@@ -1,26 +1,47 @@
 .heroSection {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #d7f5dc;
+    position: relative;
+    padding: 20px;
 }
-.heroSection .heroLeft {
-    width: 30%;
+.heroSection .over{
+    display: flex;
+    margin: auto;
+
+}
+.heroSection .over .heroLeft {
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: heroLeft 0.5s forwards ;
 }
-.heroSection .heroLeft .width {
+@keyframes heroLeft {
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+
+    }
+
+}
+
+.heroSection .over .heroLeft .width {
     width: 350px;
 }
-.heroSection .heroLeft .width h1 {
+.heroSection .over .heroLeft .width h1 {
     font-weight: 1000;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
 }
-.heroSection .heroLeft .width h1 .color {
+.heroSection .over .heroLeft .width h1 .color {
     color: #38a169;
 }
-.heroSection .heroLeft .width h6 {
+.heroSection .over .heroLeft .width h6 {
     margin-top: 10px;
     margin-bottom: 40px;
     width: 100%;
@@ -29,7 +50,7 @@
     font-size: 0.9rem;
     line-height: 25px;
 }
-.heroSection .heroLeft .width .linkColor {
+.heroSection .over .heroLeft .width .linkColor {
     width: 50px;
     padding: 10px;
     background-color: #38a169;
@@ -40,13 +61,13 @@
     color: #fff;
     text-decoration: none;
 }
-.heroSection .heroLeft .width .lnkWhite {
+.heroSection .over .heroLeft .width .lnkWhite {
     text-decoration: none;
     color: black;
     padding: 20px;
     font-weight: 600;
 }
-.heroSection .heroRight {
+.heroSection .over .heroRight {
     width: 600px;
     display: flex;
     justify-content: center;
@@ -54,62 +75,72 @@
     flex-wrap: wrap;
     margin-top: 100px;
     gap: 20px;
+    opacity: 0;
+    transform: translateX(100px);
+    animation: heroLeft 0.5s forwards ;
 }
-.heroSection .heroRight .img {
+.heroSection .over .heroRight .img {
     height: 250px;
     position: relative;
 }
-.heroSection .heroRight .img img {
+.heroSection .over .heroRight .img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.heroSection .heroRight .img .img1 {
+.heroSection .over .heroRight .img .img1 {
     border-radius: 15px;
     width: 150px;
     border-bottom-right-radius: 0px;
 }
-.heroSection .heroRight .img .img2 {
+.heroSection .over .heroRight .img .img2 {
     border-radius: 15px;
     width: 300px;
     border-bottom-left-radius: 0px;
 }
-.heroSection .heroRight .img .img3 {
+.heroSection .over .heroRight .img .img3 {
     border-radius: 15px;
     border-bottom-right-radius: 0px;
 }
-.heroSection .heroRight .img .img4 {
+.heroSection .over .heroRight .img .img4 {
     width: 150px;
     border-radius: 15px;
     border-bottom-left-radius: 0px;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
     .heroSection {
         margin: auto;
         width: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
-    .heroSection .heroLeft {
+    .heroSection .over{
+        display: flex;
+        flex-direction: column;
+    }
+    .heroSection .over .heroLeft {
         width: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        margin-top: 70px;
+        margin-left: 40px;
     }
-    .heroSection .heroLeft .width {
+    .heroSection .over .heroLeft .width {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
-    .heroSection .heroLeft .width h1 {
+    .heroSection .over .heroLeft .width h1 {
         width: 100%;
         font-weight: 1000;
         font-size: 1.8rem;
     }
-    .heroSection .heroLeft .width h6 {
+    .heroSection .over .heroLeft .width h6 {
         margin-top: 10px;
         margin-bottom: 40px;
         width: 350px;
@@ -118,7 +149,7 @@
         font-size: 0.9rem;
         line-height: 25px;
     }
-    .heroSection .heroLeft .width .linkColor {
+    .heroSection .over .heroLeft .width .linkColor {
         width: 300px;
         padding: 10px;
         background-color: #38a169;
@@ -130,7 +161,7 @@
         text-decoration: none;
         text-align: center;
     }
-    .heroSection .heroLeft .width .lnkWhite {
+    .heroSection .over .heroLeft .width .lnkWhite {
         text-decoration: none;
         width: 300px;
         color: black;
@@ -138,7 +169,7 @@
         font-weight: 600;
         text-align: center;
     }
-    .heroSection .heroRight {
+    .heroSection .over .heroRight {
         width: 100%;
         display: flex;
         justify-content: center;
@@ -147,30 +178,30 @@
         margin-top: 50px;
         gap: 20px;
     }
-    .heroSection .heroRight .img {
+    .heroSection .over .heroRight .img {
         width: 350px;
         position: relative;
     }
-    .heroSection .heroRight .img img {
+    .heroSection .over .heroRight .img img {
         width: 350px;
         height: 100%;
         object-fit: cover;
     }
-    .heroSection .heroRight .img .img1 {
+    .heroSection .over .heroRight .img .img1 {
         border-radius: 15px;
         width: 350px;
         border-bottom-right-radius: 0px;
     }
-    .heroSection .heroRight .img .img2 {
+    .heroSection .over .heroRight .img .img2 {
         border-radius: 15px;
         width: 350px;
         border-bottom-left-radius: 0px;
     }
-    .heroSection .heroRight .img .img3 {
+    .heroSection .over .heroRight .img .img3 {
         border-radius: 15px;
         border-bottom-right-radius: 0px;
     }
-    .heroSection .heroRight .img .img4 {
+    .heroSection .over .heroRight .img .img4 {
         width: 350px;
         border-radius: 15px;
         border-bottom-left-radius: 0px;
@@ -185,23 +216,28 @@
         align-items: center;
         flex-direction: column;
     }
-    .heroSection .heroLeft {
+    .heroSection .over{
+        display: flex;
+        flex-direction: column;
+    }
+    .heroSection .over .heroLeft {
         width: 60%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        margin-left: 0;
     }
-    .heroSection .heroLeft .width {
+    .heroSection .over .heroLeft .width {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
-    .heroSection .heroLeft .width h1 {
+    .heroSection .over .heroLeft .width h1 {
         font-weight: 1000;
         font-size: 1.8rem;
     }
-    .heroSection .heroLeft .width h6 {
+    .heroSection .over .heroLeft .width h6 {
         margin-top: 10px;
         margin-bottom: 40px;
         width: 250px;
@@ -210,7 +246,7 @@
         font-size: 0.9rem;
         line-height: 25px;
     }
-    .heroSection .heroLeft .width .linkColor {
+    .heroSection .over .heroLeft .width .linkColor {
         width: 250px;
         padding: 10px;
         background-color: #38a169;
@@ -222,7 +258,7 @@
         text-decoration: none;
         text-align: center;
     }
-    .heroSection .heroLeft .width .lnkWhite {
+    .heroSection .over .heroLeft .width .lnkWhite {
         text-decoration: none;
         width: 250px;
         color: black;
@@ -230,7 +266,7 @@
         font-weight: 600;
         text-align: center;
     }
-    .heroSection .heroRight {
+    .heroSection .over .heroRight {
         width: 100%;
         display: flex;
         justify-content: center;
@@ -239,30 +275,30 @@
         margin-top: 100px;
         gap: 20px;
     }
-    .heroSection .heroRight .img {
+    .heroSection .over .heroRight .img {
         width: 95%;
         position: relative;
     }
-    .heroSection .heroRight .img img {
+    .heroSection .over .heroRight .img img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
-    .heroSection .heroRight .img .img1 {
+    .heroSection .over .heroRight .img .img1 {
         border-radius: 15px;
         width: 100%;
         border-bottom-right-radius: 0px;
     }
-    .heroSection .heroRight .img .img2 {
+    .heroSection .over .heroRight .img .img2 {
         border-radius: 15px;
         width: 100%;
         border-bottom-left-radius: 0px;
     }
-    .heroSection .heroRight .img .img3 {
+    .heroSection .over .heroRight .img .img3 {
         border-radius: 15px;
         border-bottom-right-radius: 0px;
     }
-    .heroSection .heroRight .img .img4 {
+    .heroSection .over .heroRight .img .img4 {
         width: 100%;
         border-radius: 15px;
         border-bottom-left-radius: 0px;

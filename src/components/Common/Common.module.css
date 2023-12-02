@@ -1,0 +1,38 @@
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 200px;
+    background-color: #F8F9FC;
+    padding: 20px;
+}
+.main .name {
+    font-weight: bolder;
+    font-size: 2rem;
+    padding: 10px;
+    margin-top: 70px;
+    transform: translateX(100px);
+    opacity: 0;
+    animation: all 0.5s forwards;
+}
+.main .current {
+    font-weight: bold;
+    padding: 10px;
+    color: #20b15a;
+    transform: translateX(-100px);
+    opacity: 0;
+    animation: all 0.5s forwards;
+}
+@keyframes all {
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+.main .current a {
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+}
