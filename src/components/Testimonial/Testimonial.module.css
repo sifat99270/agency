@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     margin: auto;
+    padding: 50px;
 }
 .testimonialSection .green {
     color: #20b15a;

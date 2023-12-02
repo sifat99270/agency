@@ -3,7 +3,7 @@
     display: flex;
     margin:  auto ;
     flex-direction: column;
-
+    padding: 30px;
 }
 .serviceSection .green {
     color: #20b15a;

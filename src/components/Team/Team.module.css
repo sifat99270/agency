@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: left;
   margin: auto;
+  padding: 50px;
 }
 .teamSection .green {
   color: #20b15a;
