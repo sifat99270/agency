@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.teamSection {
+  width: 1100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin: auto;
+}
+.teamSection .green {
+  color: #20b15a;
+  font-weight: bold;
+  padding: 10px;
+}
+.teamSection .h1 {
+  width: 400px;
+  font-weight: 1000;
+  font-size: 2rem;
+}
+.teamSection .flex {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  margin-top: 20px;
+}
+.teamSection .imgBox {
+  width: 300px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  position: relative;
+  box-shadow: 0 0 10px 2px #e3e3e3;
+  border-radius: 10px;
+}
+.teamSection .imgBox .img {
+  width: 100%;
+  object-fit: cover;
+}
+.teamSection .imgBox .name {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 10px;
+}
+.teamSection .imgBox .icon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 70%;
+  left: 35%;
+  width: 100px;
+  height: 30px;
+  background-color: #fff;
+  gap: 10px;
+  border-radius: 10px;
+  scale: 0;
+  transition: 0.5s;
+}
+.teamSection .imgBox:hover .icon {
+  scale: 1;
+}
+.teamSection .imgBox .icon img {
+  width: 20px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1150px) {
+  .teamSection {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: left;
+    margin: auto;
+  }
+
+  .teamSection .h1 {
+    width: 400px;
+    font-weight: 1000;
+    font-size: 2rem;
+  }
+  .teamSection .flex {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .teamSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: left;
+    margin: auto;
+  }
+  .teamSection .h1 {
+    width: 90%;
+    font-weight: 1000;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .teamSection .imgBox {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    position: relative;
+    box-shadow: 0 0 10px 2px #e3e3e3;
+    border-radius: 10px;
+  }
+}

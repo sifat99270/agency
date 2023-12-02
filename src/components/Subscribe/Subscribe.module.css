@@ -1,0 +1,67 @@
+.subscribeSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.subscribeSection .color {
+    font-weight: bolder;
+    color: #20b15a;
+    padding: 10px;
+}
+.subscribeSection .h1 {
+    font-weight: bolder;
+    font-size: 1.5rem;
+    width: 300px;
+    text-align: center;
+    padding: 5px;
+}
+.subscribeSection .h6 {
+    font-size: 0.5rem;
+    width: 300px;
+    text-align: center;
+    font-weight: bold;
+    color: #8b8b8b;
+    padding: 15px;
+}
+.subscribeSection .form {
+    width: 300px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    padding: 0px 1px;
+}
+.subscribeSection .form input {
+    width: 250px;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+.subscribeSection .form .btn {
+    height: 90%;
+    padding: 10px;
+    background-color: #f55f1d;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+.subscribeSection .form span {
+    position: absolute;
+    left: 10px;
+    transition: 0.5s;
+    pointer-events: none;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.subscribeSection .form input:focus ~ span,
+.subscribeSection .form input:valid ~ span {
+    transform: translateY(-20px);
+    transition: 0.5s;
+}
