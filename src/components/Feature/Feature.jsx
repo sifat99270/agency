@@ -26,7 +26,7 @@ const Feature = async () => {
                     {mapData.map((item)=>{
                         return(
                             <div key={item['id']} className={classes.imgSection}>
-                                <Image alt="pic" width={200} height={200} className={classes.img} src={item['image']} />
+                                <Image alt="pic" width={200} height={200} 	  className={classes.img} src={item['image']} />
                                 <p className={classes.date}>App Design - June 20, 2022</p>
                                 <p className={classes.title}>{item['title']}</p>
                             </div>
